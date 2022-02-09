@@ -1,1 +1,1 @@
-## Max UI
+# Max UI - Vanilla CSS Component Library
