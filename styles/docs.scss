@@ -1,0 +1,166 @@
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  position: relative;
+  .sidebar {
+    position: sticky;
+    top: calc(2rem + 82px);
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 82px - 2rem);
+    overflow-y: scroll;
+    h6 {
+      margin-bottom: 1.2rem;
+    }
+    .link {
+      position: relative;
+      font-size: 15px;
+      color: var(--gray-2);
+      margin-bottom: 1rem;
+      width: fit-content;
+      &:before {
+        content: "";
+        position: absolute;
+        transition: transform 0.5s ease;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: var(--primary);
+        transform: scaleX(0);
+      }
+
+      &:hover {
+        color: var(--primary);
+        &:before {
+          transform: scaleX(1);
+          margin-right: 1.4rem;
+        }
+      }
+      &.activeLink {
+        color: var(--primary);
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          transition: transform 0.5s ease;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background: var(--primary);
+          transform: scaleX(1);
+          margin-right: 1.4rem;
+          background: var(--primary);
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    .sub_container {
+      flex: auto;
+      width: 100%;
+      padding: 0 clamp(1rem, 3rem, 5rem);
+    }
+    section {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  pre {
+    margin-top: 0;
+  }
+
+  h1,
+  h4 {
+    margin-top: 2.4rem;
+    margin-bottom: 1.3rem;
+  }
+  h1,
+  h3,
+  p,
+  ul,
+  li {
+    code {
+      font-family: "Fira Code", Menlo, Monaco, Consolas, monospace;
+      font-size: 14px;
+      color: #fff;
+      background: #282936;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+  }
+  ul {
+    padding-left: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  code,
+  code span {
+    font-family: "Fira Code", Menlo, Monaco, Consolas, monospace !important;
+    font-size: 1rem;
+  }
+  code.hljs {
+    border-radius: 4px;
+    padding: 1rem 2rem;
+  }
+  span > code {
+    margin: 1rem 1.5rem;
+  }
+  section {
+    scroll-margin-top: 7rem;
+  }
+  .description {
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+.well {
+  border: 1px solid #ededed;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  .icon-badge {
+    margin-right: 1rem;
+  }
+  &.align_center {
+    align-items: center;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.block {
+    display: block;
+  }
+  .round {
+    width: 35%;
+  }
+}
+
+.card_container {
+  display: flex;
+  gap: 1.2rem;
+}
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  align-items: baseline;
+}

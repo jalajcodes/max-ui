@@ -1,0 +1,163 @@
+.main {
+  display: flex;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  position: relative;
+}
+.main .sidebar {
+  position: sticky;
+  top: calc(2rem + 82px);
+  width: 14rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 82px - 2rem);
+  overflow-y: scroll;
+}
+.main .sidebar h6 {
+  margin-bottom: 1.2rem;
+}
+.main .sidebar .link {
+  position: relative;
+  font-size: 15px;
+  color: var(--gray-2);
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+.main .sidebar .link:before {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+}
+.main .sidebar .link:hover {
+  color: var(--primary);
+}
+.main .sidebar .link:hover:before {
+  transform: scaleX(1);
+  margin-right: 1.4rem;
+}
+.main .sidebar .link.activeLink {
+  color: var(--primary);
+  position: relative;
+}
+.main .sidebar .link.activeLink:before {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(1);
+  margin-right: 1.4rem;
+  background: var(--primary);
+}
+.main .wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+.main .wrapper .sub_container {
+  flex: auto;
+  width: 100%;
+  padding: 0 3rem;
+}
+.main .wrapper section {
+  display: none;
+}
+.main .wrapper section.active {
+  display: block;
+}
+.main pre {
+  margin-top: 0;
+}
+.main h1,
+.main h4 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.3rem;
+}
+.main h1 code,
+.main h3 code,
+.main p code,
+.main ul code,
+.main li code {
+  font-family: "Fira Code", Menlo, Monaco, Consolas, monospace;
+  font-size: 14px;
+  color: #fff;
+  background: #282936;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+.main ul {
+  padding-left: 1.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+.main code,
+.main code span {
+  font-family: "Fira Code", Menlo, Monaco, Consolas, monospace !important;
+  font-size: 1rem;
+}
+.main code.hljs {
+  border-radius: 4px;
+  padding: 1rem 2rem;
+}
+.main span > code {
+  margin: 1rem 1.5rem;
+}
+.main section {
+  scroll-margin-top: 7rem;
+}
+.main .description {
+  font-weight: 500;
+  text-align: center;
+}
+
+.well {
+  border: 1px solid #ededed;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.well .icon-badge {
+  margin-right: 1rem;
+}
+.well.align_center {
+  align-items: center;
+}
+.well.column {
+  flex-direction: column;
+}
+.well.block {
+  display: block;
+}
+.well .round {
+  width: 35%;
+}
+
+.card_container {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  align-items: baseline;
+}
+
+/*# sourceMappingURL=docs.css.map */

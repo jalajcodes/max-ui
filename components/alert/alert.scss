@@ -1,0 +1,38 @@
+.alert {
+  border: 2px solid;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 8%) 0px 1px 2px;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  &-primary {
+    color: var(--blue);
+    background: var(--blue-light);
+    border-color: var(--blue);
+  }
+
+  &-secondary {
+    color: var(--yellow);
+    background-color: var(--yellow-light);
+    border-color: var(--yellow);
+  }
+
+  &-success {
+    color: var(--green);
+    background-color: var(--green-light);
+    border-color: var(--green);
+  }
+
+  &-warning {
+    color: var(--red);
+    background-color: var(--red-light);
+    border-color: var(--red);
+  }
+}
