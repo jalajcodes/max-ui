@@ -106,10 +106,6 @@
   color: var(--gray-2);
   -webkit-line-clamp: 2;
 }
-.card .rating {
-  font-size: 1.2rem;
-  color: var(--gray-3);
-}
 .card__bottom {
   display: flex;
   justify-content: space-between;
@@ -118,19 +114,10 @@
 }
 .card__price span {
   display: block;
-}
-.card__price > span {
   font-size: 1.5rem;
   margin-right: 0.6rem;
   font-weight: 600;
   color: var(--black);
-}
-.card__price > span + span {
-  text-decoration: line-through;
-  color: var(--gray-1);
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1;
 }
 .card__buttons button {
   background-color: var(--black);
