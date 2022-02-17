@@ -45,11 +45,8 @@ document.querySelectorAll("a").forEach((el) => {
 
 window.onload = () => {
   const url = window.location.href;
-  const sectionId = url.substring(url.indexOf("#"));
-  const sectionToShow =
-    sectionId && sectionId.substring(sectionId.indexOf("#"))
-      ? document.querySelector(sectionId)
-      : null;
+  const sectionId = url.split("#")[1];
+  const sectionToShow = sectionId ? document.querySelector(`#${sectionId}`) : null;
   if (sectionToShow) {
     sectionToShow.classList.add("active");
   } else {
