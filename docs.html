@@ -651,6 +651,206 @@
               </code>
             </pre>
           </section>
+
+          <section id="grid">
+            <h1>Grid</h1>
+            <p>
+              The grid is a responsive layout system that allows you to create a flexible grid
+              system that will automatically resize to fit the screen.
+            </p>
+            <h4>Two Columns Grid</h4>
+            <p>
+              To create a two column grid, add the class <code>.grid</code> and
+              <code>.col-2</code> to the parent element.
+            </p>
+            <div class="grid col-2">
+              <div class="well drop-shadow-lg">COLUMN 1</div>
+              <div class="well drop-shadow-lg">COLUMN 2</div>
+              <div class="well drop-shadow-lg">COLUMN 1</div>
+              <div class="well drop-shadow-lg">COLUMN 2</div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="grid col-2">
+  <div class="well drop-shadow-lg">COLUMN 1</div>
+  <div class="well drop-shadow-lg">COLUMN 2</div>
+  <div class="well drop-shadow-lg">COLUMN 1</div>
+  <div class="well drop-shadow-lg">COLUMN 2</div>
+</div>
+              </code>
+            </pre>
+
+            <h4>Three Columns Grid</h4>
+            <p>
+              To create a three column grid, add the class <code>.grid</code> and
+              <code>.col-3</code> to the parent element.
+            </p>
+            <div class="grid col-3">
+              <div class="well drop-shadow-lg">COLUMN 1</div>
+              <div class="well drop-shadow-lg">COLUMN 2</div>
+              <div class="well drop-shadow-lg">COLUMN 3</div>
+              <div class="well drop-shadow-lg">COLUMN 1</div>
+              <div class="well drop-shadow-lg">COLUMN 2</div>
+              <div class="well drop-shadow-lg">COLUMN 3</div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="grid col-3">
+  <div class="well drop-shadow-lg">COLUMN 1</div>
+  <div class="well drop-shadow-lg">COLUMN 2</div>
+  <div class="well drop-shadow-lg">COLUMN 3</div>
+  <div class="well drop-shadow-lg">COLUMN 1</div>
+  <div class="well drop-shadow-lg">COLUMN 2</div>
+  <div class="well drop-shadow-lg">COLUMN 3</div>
+</div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="modal">
+            <h1>Modal</h1>
+            <p>
+              The modal is a component that allows you to create a modal window that can be
+              displayed on the screen.
+            </p>
+            <h4>Modal</h4>
+            <p>To create a modal, add the class <code>.modal</code> to the parent element.</p>
+            <div class="well">
+              <button class="btn btn--primary" id="modal-btn">Basic Modal</button>
+            </div>
+
+            <div class="modal__container" id="modal-container">
+              <section class="modal" id="modal-el">
+                <header class="modal__title">
+                  <h1>Modal Title</h1>
+                </header>
+                <main class="modal__body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis,
+                    explicabo deleniti rerum.
+                  </p>
+                </main>
+                <footer class="modal__footer" id="modal-footer">
+                  <button class="btn btn--primary modal__footer--btn">ACTION 1</button>
+                  <button class="btn btn--outline modal__footer--btn">ACTION 2</button>
+                </footer>
+              </section>
+            </div>
+            <script>
+              const modalBtn = document.getElementById("modal-btn");
+              const modalContainer = document.getElementById("modal-container");
+              const modalElem = document.getElementById("modal-el");
+              const modalFooterButtons = document.querySelectorAll(".modal__footer--btn");
+
+              modalBtn.addEventListener("click", () => {
+                modalContainer.style.display = "flex";
+                modalElem.style.display = "flex";
+              });
+
+              window.addEventListener("click", (e) => {
+                if (
+                  e.target == modalContainer ||
+                  e.target === modalFooterButtons[0] ||
+                  e.target === modalFooterButtons[1]
+                ) {
+                  modalContainer.style.display = "none";
+                  modalElem.style.display = "none";
+                }
+              });
+            </script>
+
+            <pre>
+              <code class="html">
+<div class="modal__container" id="modal-container">
+  <section class="modal" id="modal-el">
+    <header class="modal__title">
+      <h1>Modal Title</h1>
+    </header>
+    <main class="modal__body">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis blanditiis,
+        explicabo deleniti rerum.
+      </p>
+    </main>
+    <footer class="modal__footer" id="modal-footer">
+      <button class="btn btn--primary modal__footer--btn">ACTION 1</button>
+      <button class="btn btn--outline modal__footer--btn">ACTION 2</button>
+    </footer>
+  </section>
+</div>
+<script>
+  const modalBtn = document.getElementById("modal-btn");
+  const modalContainer = document.getElementById("modal-container");
+  const modalElem = document.getElementById("modal-el");
+  const modalFooterButtons = document.querySelectorAll(".modal__footer--btn");
+
+  modalBtn.addEventListener("click", () => {
+    modalContainer.style.display = "flex";
+    modalElem.style.display = "flex";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (
+      e.target == modalContainer ||
+      e.target === modalFooterButtons[0] ||
+      e.target === modalFooterButtons[1]
+    ) {
+      modalContainer.style.display = "none";
+      modalElem.style.display = "none";
+    }
+  });
+</script>
+                </code>
+            </pre>
+          </section>
+
+          <section id="navigation">
+            <h1>Navigation</h1>
+            <p>
+              The navigation is a component that allows you to create a navigation bar that can be
+              displayed on the screen.
+            </p>
+            <h4>Navigation</h4>
+            <p>To create a navigation, add the class <code>.nav</code> to the parent element.</p>
+            <div class="well">
+              <div class="nav">
+                <div class="nav__logo">
+                  <img src="./images/logo.png" alt="logo" width="200" />
+                </div>
+                <div class="nav__links">
+                  <a href="#" class="nav__link">
+                    <span class="nav__link--text">Home</span>
+                  </a>
+                  <a href="#" class="nav__link">
+                    <span class="nav__link--text">About</span>
+                  </a>
+                  <a href="#" class="nav__link">
+                    <span class="nav__link--text">Contact</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="nav">
+  <div class="nav__logo">
+    <img src="./images/logo.png" alt="logo" width="200" />
+  </div>
+  <div class="nav__links">
+    <a href="#" class="nav__link">
+      <span class="nav__link--text">Home</span>
+    </a>
+    <a href="#" class="nav__link">
+      <span class="nav__link--text">About</span>
+    </a>
+    <a href="#" class="nav__link">
+      <span class="nav__link--text">Contact</span>
+    </a>
+  </div>
+</div>
+                </code>
+                </pre>
+          </section>
         </div>
         <footer class="footer home-footer">
           <span
