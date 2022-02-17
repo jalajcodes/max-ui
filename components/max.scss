@@ -3,6 +3,9 @@
 @import url("./avatar/avatar.css");
 @import url("./badge/badge.css");
 @import url("./card/card.css");
+@import url("./image/image.css");
+@import url("./input/input.css");
+@import url("./text/text.css");
 
 :root {
   --primary: #129bfd;
@@ -20,8 +23,10 @@
   --yellow-light: #feebc8;
   --blue: #007bc3;
   --blue-light: #bde3f8;
-  --gray-1: #626262;
-  --gray-3: #adadad;
+  --gray-1: #cec8c8;
+  --gray-2: #aca5a5;
+  --gray-3: #968d8d;
+  --gray-4: #636060;
   --drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0/0.07)) drop-shadow(0 2px 2px rgb(0 0 0/0.06));
   --drop-shadow-lg: drop-shadow(0 10px 8px rgb(0 0 0/0.04)) drop-shadow(0 4px 3px rgb(0 0 0/0.1));
 }

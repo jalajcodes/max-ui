@@ -19,7 +19,7 @@
     .link {
       position: relative;
       font-size: 15px;
-      color: var(--gray-2);
+      color: var(--gray-4);
       margin-bottom: 1rem;
       width: fit-content;
       &:before {
@@ -153,7 +153,19 @@
     width: 35%;
   }
 }
+section#text div.well {
+  flex-direction: column;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 .card_container {
   display: flex;
   gap: 1.2rem;
