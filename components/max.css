@@ -71,12 +71,6 @@ p {
   font-size: 1rem;
 }
 
-label {
-  position: relative;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-
 a,
 a:visited,
 a:active {
@@ -108,7 +102,7 @@ a i {
   filter: var(--drop-shadow-lg);
 }
 
-.img-fluid {
+.img-responsive {
   max-inline-size: 100%;
   block-size: auto;
   height: auto;
