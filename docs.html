@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docus | Max UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/github-dark.min.css"
+    />
+    <link rel="stylesheet" href="./styles/docs.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./components/max.css" />
+    <script src="https://kit.fontawesome.com/8269a6457c.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header drop-shadow-md">
+      <div class="header__wrapper">
+        <a href="/"> <img src="/images/logo.png" class="header__logo" alt="" /></a>
+        <div class="header__links">
+          <a href="/" class="text-primary">Home</a>
+          <a href="/docs.html#introduction">Docs</a>
+          <a href="https://github.com/jalajcodes/max-ui">Github</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <aside class="sidebar">
+        <h4>Introduction</h4>
+        <a href="#quickstart" class="link">Quick Start</a>
+        <h4>UI Components</h4>
+        <a href="#alert" class="link">Alert</a>
+        <a href="#avatar" class="link">Avatar</a>
+        <a href="#badge" class="link">Badge</a>
+        <a href="#button" class="link">Button</a>
+        <a href="#card" class="link">Card</a>
+        <a href="#image" class="link">Image</a>
+        <a href="#input" class="link">Input</a>
+        <a href="#grid" class="link">Grid</a>
+        <a href="#modal" class="link">Modal</a>
+        <a href="#navigation" class="link">Navigation</a>
+      </aside>
+      <div class="wrapper">
+        <div class="sub_container">
+          <section id="quickstart">
+            <h1>Quick start</h1>
+            <p>
+              To add Max UI in your project, Copy the Link given below and paste it in the
+              <code>head</code> tag of your html, above all other style sheets.
+            </p>
+            <pre>
+    <code class="html">
+<link rel="stylesheet" href="https://github.com/jalajcodes/max-ui/components/max.css"/>
+    </code>
+    </pre>
+          </section>
+
+          <section id="alert">
+            <h1>Alerts</h1>
+            <p>Alerts are used to notify the user of an important event.</p>
+            <p>
+              There are 4 types of Alerts in Max UI : <code>alert-primary</code>
+              <code>alert-secondary</code> <code>alert-success</code>
+              <code>alert-warning</code>
+            </p>
+            <h4>Demo</h4>
+            <div class="demo">
+              <div class="alert alert-primary">
+                <strong>Primary!</strong> This is a primary alert—check it out!
+              </div>
+              <div class="alert alert-secondary">
+                <strong>Secondary!</strong> This is a secondary alert—check it out!
+              </div>
+              <div class="alert alert-success">
+                <strong>Success!</strong> This is a success alert—check it out!
+              </div>
+              <div class="alert alert-warning">
+                <strong>Warning!</strong> This is a warning alert—check it out!
+              </div>
+            </div>
+            <pre>
+    <code class="html">
+  <div class="alert alert-primary">
+    <strong>Primary!</strong> This is a primary alert—check it out!
+  </div>
+  <div class="alert alert-secondary">
+    <strong>Secondary!</strong> This is a secondary alert—check it out!
+  </div>
+  <div class="alert alert-success">
+    <strong>Success!</strong> This is a success alert—check it out!
+  </div>
+  <div class="alert alert-warning">
+    <strong>Warning!</strong> This is a warning alert—check it out!
+  </div>
+    </code>
+    </pre>
+          </section>
+
+          <section id="avatar">
+            <h1>Avatar</h1>
+            <p>Avatars are used to represent people, companies, products, etc.</p>
+            <h4>Demo</h4>
+            <div class="well">
+              <div class="avatar avatar-xs">
+                <img src="https://picsum.photos/200/200?random=3" />
+              </div>
+              <div class="avatar avatar-sm">
+                <img src="https://picsum.photos/200/200?random=3" />
+              </div>
+              <div class="avatar avatar-md">
+                <img src="https://picsum.photos/200/200?random=2" />
+              </div>
+              <div class="avatar avatar-lg">
+                <img src="https://picsum.photos/200/200?random=1" />
+              </div>
+            </div>
+            <pre>
+    <code class="html">
+<div class="avatar avatar-xs">
+  <img src="https://picsum.photos/200/200?random=4" />
+</div>
+<div class="avatar avatar-sm">
+  <img src="https://picsum.photos/200/200?random=3" />
+</div>
+<div class="avatar avatar-md">
+  <img src="https://picsum.photos/200/200?random=2" />
+</div>
+<div class="avatar avatar-lg">
+  <img src="https://picsum.photos/200/200?random=1" />
+</div>
+      </code>
+      </pre>
+          </section>
+
+          <section id="badge">
+            <h1>Badge</h1>
+            <p>Badges are used to display text or status.</p>
+            <h4>Demo</h4>
+            <div class="well">
+              <span class="badge badge-primary">Primary</span>
+              <span class="badge badge-secondary">Secondary</span>
+              <span class="badge badge-success">Success</span>
+              <span class="badge badge-warning">Warning</span>
+            </div>
+            <pre>
+              <code class="html">
+<span class="badge badge-primary">Primary</span>
+<span class="badge badge-secondary">Secondary</span>
+<span class="badge badge-success">Success</span>
+<span class="badge badge-warning">Warning</span>
+              </code>
+            </pre>
+            <div class="well">
+              <p class="badge-container">
+                Example of Text with Badge
+                <span class="badge badge-success">new</span>
+              </p>
+            </div>
+            <pre>
+    <code class="html">
+<p class="badge-container">
+  Example of Text with Badge
+  <span class="badge badge-success">new</span>
+</p>
+      </code>
+            </pre>
+          </section>
+
+          <section id="button">
+            <h1>Button</h1>
+            <p>Buttons are used to trigger an action.</p>
+
+            <h4>Demo</h4>
+            <div class="well">
+              <button class="btn btn--primary">Primary</button>
+              <button class="btn btn--info">Info</button>
+              <button class="btn btn--success">Success</button>
+              <button class="btn btn--warning">Warning</button>
+            </div>
+            <pre>
+<code class="html">
+<button class="btn btn--primary">Primary</button>
+<button class="btn btn--info">Info</button>
+<button class="btn btn--success">Success</button>
+<button class="btn btn--warning">Warning</button>
+</code>
+</pre>
+
+            <div class="well">
+              <button class="btn btn--primary btn--round">Click Me</button>
+              <button class="btn btn--primary btn--outline">Click Me</button>
+              <button class="btn btn--primary btn--round btn--outline">Click Me</button>
+              <button class="btn btn--primary btn--link">Click Me</button>
+            </div>
+            <pre>
+<code class="html">
+<button class="btn btn--primary btn--round">Click Me</button>
+<button class="btn btn--primary btn--outline">Click Me</button>
+<button class="btn btn--primary btn--round btn--outline">Click Me</button>
+<button class="btn btn--primary btn--link">Click Me</button>
+</code>
+</pre>
+          </section>
+
+          <section id="card">
+            <h1>Card</h1>
+            <p>
+              Cards are used to display content in a way that is visually distinct and attached to
+              the main content.
+            </p>
+            <h4>Vertical Card</h4>
+            <div class="card_container">
+              <div class="card vertical">
+                <div class="card__image">
+                  <span class="badge badge-warning">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                    Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+                    expedita aliquam!
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card vertical">
+                <div class="card__image">
+                  <span class="badge badge-warning">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                    Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+                    expedita aliquam!
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card vertical">
+                <div class="card__image">
+                  <span class="badge badge-warning">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                    Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+                    expedita aliquam!
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i> Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="card vertical">
+  <div class="card__image">
+    <span class="badge badge-warning">Sale</span>
+    <a href="#"
+      ><img
+        class="img-fluid"
+        src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    /></a>
+  </div>
+  <div class="card__content">
+    <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+      ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+      Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+      expedita aliquam!
+    </p>
+    <div class="card__bottom">
+      <div class="card__price">
+        <span>Rs. 1000</span>
+      </div>
+      <div class="card__buttons">
+        <button class="btn btn--sm btn--primary btn--ghost">
+          <i class="fas fa-shopping-cart"></i> Add to Cart to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+                </code>
+            </pre>
+
+            <h4>Horizontal Card</h4>
+            <p>
+              To use the horizontal card just add the <code>.horizontal</code> class to the parent.
+            </p>
+            <div class="card_container">
+              <div class="card horizontal">
+                <span class="card__close"><i class="fas fa-times"></i></span>
+                <div class="card__image">
+                  <span class="badge badge-warning">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i>Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card horizontal">
+                <span class="card__close"><i class="fas fa-times"></i></span>
+                <div class="card__image">
+                  <span class="badge badge-warning">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i>Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="card horizontal">
+  <span class="card__close"><i class="fas fa-times"></i></span>
+  <div class="card__image">
+    <span class="badge badge-warning">Sale</span>
+    <a href="#"
+      ><img
+        class="img-fluid"
+        src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    /></a>
+  </div>
+  <div class="card__content">
+    <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+      ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+    </p>
+    <div class="card__bottom">
+      <div class="card__price">
+        <span>Rs. 1000</span>
+      </div>
+      <div class="card__buttons">
+        <button class="btn btn--sm btn--primary btn--ghost">
+          <i class="fas fa-shopping-cart"></i>Add
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+                </code>
+            </pre>
+
+            <h4>Text Only Card</h4>
+            <p>
+              To use the text only card just add the <code>.text-only</code> class to the parent.
+            </p>
+            <div class="card_container">
+              <div class="card horizontal text-only">
+                <span class="badge badge-warning">Sale</span>
+                <div class="card__image">
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos voluptates
+                    officia corrupti at expedita dolorum atque repellat nobis excepturi inventore
+                    veniam possimus reprehenderit tenetur, vel, voluptate quaerat nihil? Explicabo,
+                    quisquam.
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i>Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card horizontal text-only">
+                <span class="badge badge-warning">Sale</span>
+                <div class="card__image">
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos voluptates
+                    officia corrupti at expedita dolorum atque repellat nobis excepturi inventore
+                    veniam possimus reprehenderit tenetur, vel, voluptate quaerat nihil? Explicabo,
+                    quisquam.
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i>Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="card horizontal text-only">
+  <span class="badge badge-warning">Sale</span>
+  <div class="card__image">
+    <a href="#"
+      ><img
+        class="img-fluid"
+        src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    /></a>
+  </div>
+  <div class="card__content">
+    <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos voluptates
+      officia corrupti at expedita dolorum atque repellat nobis excepturi inventore
+      veniam possimus reprehenderit tenetur, vel, voluptate quaerat nihil? Explicabo,
+      quisquam.
+    </p>
+    <div class="card__bottom">
+      <div class="card__price">
+        <span>Rs. 1000</span>
+      </div>
+      <div class="card__buttons">
+        <button class="btn btn--sm btn--primary btn--ghost">
+          <i class="fas fa-shopping-cart"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+                </code>
+            </pre>
+
+            <h4>Card with Overlay</h4>
+            <p>
+              To use the card with overlay just add a div class <code>.card__overlay</code> class to
+              the parent.
+            </p>
+            <div class="card_container">
+              <div class="card vertical">
+                <div class="card__overlay">
+                  <i class="fa-regular fa-face-frown"></i> Out of Stock
+                </div>
+                <div class="card__image">
+                  <span class="badge badge-red">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                    Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+                    expedita aliquam!
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i>Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card vertical">
+                <div class="card__overlay">
+                  <i class="fa-regular fa-face-frown"></i> Out of Stock
+                </div>
+                <div class="card__image">
+                  <span class="badge badge-red">Sale</span>
+                  <a href="#"
+                    ><img
+                      class="img-fluid"
+                      src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+                  /></a>
+                </div>
+                <div class="card__content">
+                  <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+                    ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+                    Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+                    expedita aliquam!
+                  </p>
+                  <div class="card__bottom">
+                    <div class="card__price">
+                      <span>Rs. 1000</span>
+                    </div>
+                    <div class="card__buttons">
+                      <button class="btn btn--sm btn--primary btn--ghost">
+                        <i class="fas fa-shopping-cart"></i>Add to Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="card vertical">
+  <div class="card__overlay">
+    <i class="fa-regular fa-face-frown"></i> Out of Stock
+  </div>
+  <div class="card__image">
+    <span class="badge badge-red">Sale</span>
+    <a href="#"
+      ><img
+        class="img-fluid"
+        src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    /></a>
+  </div>
+  <div class="card__content">
+    <a class="card__name" href="#">Men's Cotton Sweatshirt</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto soluta, officia
+      ipsum voluptatem laboriosam tenetur facilis illum assumenda dolorem deserunt.
+      Facere laboriosam accusantium corrupti, repellendus ratione inventore architecto
+      expedita aliquam!
+    </p>
+    <div class="card__bottom">
+      <div class="card__price">
+        <span>Rs. 1000</span>
+      </div>
+      <div class="card__buttons">
+        <button class="btn btn--sm btn--primary btn--ghost">
+          <i class="fas fa-shopping-cart"></i>Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+              </code>
+            </pre>
+          </section>
+        </div>
+        <footer class="footer home-footer">
+          <span
+            >Made with <i class="fas fa-code fa-flip"></i> by&nbsp;<strong>Jalaj Gupta</strong>
+          </span>
+          <div class="footer__links">
+            <a href="https://twitter.com/jalajcodes"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/jalajcodes"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jalajgupta"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:jalaj799@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="module" src="./js/docs.js" />
+  </body>
+</html>

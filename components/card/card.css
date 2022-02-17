@@ -1,0 +1,134 @@
+.card {
+  display: flex;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.card.vertical {
+  flex-direction: column;
+}
+.card.vertical .image {
+  padding: 1rem 1rem 0 1rem;
+}
+.card.horizontal {
+  flex-direction: row;
+}
+.card.text-only .card__image {
+  display: none;
+}
+.card.text-only .badge {
+  right: 0;
+  left: unset;
+  border-radius: 0;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.card__close {
+  position: absolute;
+  display: inline-flex;
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  right: 1rem;
+  color: #bbbbbb;
+  bottom: 1rem;
+  background: #edeeef;
+  border-radius: 50%;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.card__close:hover {
+  color: var(--gray-1);
+}
+.card__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  backdrop-filter: brightness(0.8);
+  align-items: center;
+  background: #e3e3e363;
+  justify-content: center;
+}
+.card__overlay i {
+  margin-right: 0.2rem;
+}
+.card__image {
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: auto;
+  min-width: 12rem;
+  max-height: 15rem;
+}
+.card__image a {
+  display: block;
+  width: 100%;
+}
+.card__image img {
+  transition: transform 0.7s;
+}
+.card__image img:hover {
+  transform: translatey(12%) scale(1.2);
+}
+.card .badge {
+  position: absolute;
+  left: 0rem;
+  top: 1rem;
+  z-index: 1;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.card__name {
+  color: var(--black);
+  font-weight: 600;
+  margin: 0.4rem 0;
+  font-size: 0.9rem;
+}
+.card__name:hover {
+  color: var(--black);
+}
+.card p {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 0.8rem;
+  -webkit-box-orient: vertical;
+  line-height: 1.3;
+  color: var(--gray-2);
+  -webkit-line-clamp: 2;
+}
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.card__price span {
+  display: block;
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+  font-weight: 600;
+  color: var(--black);
+}
+.card__buttons button {
+  background-color: var(--black);
+}
+.card__buttons button i {
+  margin-right: 5px;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 1.25rem 1.25rem 1.25rem;
+}
+
+/*# sourceMappingURL=card.css.map */

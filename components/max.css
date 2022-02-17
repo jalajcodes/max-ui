@@ -1,0 +1,117 @@
+@import url("./alert/alert.css");
+@import url("./button/button.css");
+@import url("./avatar/avatar.css");
+@import url("./badge/badge.css");
+@import url("./card/card.css");
+:root {
+  --primary: #129bfd;
+  --primary-light: #54b1f3;
+  --primary-dark: #0693fb;
+  --secondary: #fdc040;
+  --black: #302d41;
+  --white: #ffffff;
+  --text-color: var(--black);
+  --green: #20a779;
+  --green-light: #c6f6d5;
+  --red: #fd4e4e;
+  --red-light: #fed7d7;
+  --yellow: #f8aa1c;
+  --yellow-light: #feebc8;
+  --blue: #007bc3;
+  --blue-light: #bde3f8;
+  --gray-1: #626262;
+  --gray-3: #adadad;
+  --drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0/0.07)) drop-shadow(0 2px 2px rgb(0 0 0/0.06));
+  --drop-shadow-lg: drop-shadow(0 10px 8px rgb(0 0 0/0.04)) drop-shadow(0 4px 3px rgb(0 0 0/0.1));
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.75;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+label {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  color: var(--primary);
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+a:hover,
+a:active {
+  color: var(--primary-dark);
+}
+
+a i {
+  margin-right: 0.3rem;
+}
+
+.drop-shadow-md {
+  filter: var(--drop-shadow-md);
+}
+
+.drop-shadow-lg {
+  filter: var(--drop-shadow-lg);
+}
+
+.img-fluid {
+  max-inline-size: 100%;
+  block-size: auto;
+  height: auto;
+}
+
+/*# sourceMappingURL=max.css.map */

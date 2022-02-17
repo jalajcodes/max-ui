@@ -1,0 +1,126 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--page-bg);
+  font-size: 100%;
+  color: var(--text-color);
+  line-height: 1.5em;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+}
+
+.header {
+  border-bottom: 1px solid #e3e3e3c7;
+  position: sticky;
+  background: #ffffff;
+  top: 0;
+  z-index: 10;
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1240px;
+  margin: auto;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+}
+.header__logo {
+  width: 250px;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+}
+.header__links a {
+  color: var(--black);
+  margin-right: 1.2rem;
+}
+.header__links a:hover {
+  color: var(--primary);
+}
+
+.container {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__info {
+  width: 50vw;
+  text-align: center;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 10;
+}
+.container__info h1 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  line-height: 1.4;
+}
+.container__info h1 span {
+  color: var(--primary);
+}
+.container__info h1 img {
+  margin-bottom: -10px;
+  width: 100px;
+}
+.container__info p:first-of-type {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.container__info .frame-image {
+  background-image: url("../images/image-viewer.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+.container .cta button {
+  width: 10rem;
+  font-size: 1rem;
+  margin: 0 0.7rem;
+}
+
+.footer {
+  margin: 1.3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+.footer span {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.footer span i {
+  font-size: inherit;
+  color: var(--primary);
+  margin: 0 0.4rem;
+}
+.footer span a {
+  margin-left: 0.3rem;
+}
+.footer__links i {
+  font-size: 1.5rem;
+  margin: 0 0.8rem;
+  color: #b8b8b8;
+  transition: all 0.3s ease 0s;
+}
+.footer__links i:hover {
+  color: var(--primary);
+}
+.footer.home-footer {
+  height: auto;
+}
+
+/*# sourceMappingURL=index.css.map */
