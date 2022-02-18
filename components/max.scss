@@ -76,12 +76,6 @@ p {
   font-size: 1rem;
 }
 
-label {
-  position: relative;
-  font-weight: 500;
-  font-size: 0.8rem;
-}
-
 a,
 a:visited,
 a:active {
@@ -102,7 +96,6 @@ a i {
   margin-right: 0.3rem;
 }
 
-// DROP SHADOWS
 .drop-shadow-md {
   filter: var(--drop-shadow-md);
 }
@@ -110,7 +103,7 @@ a i {
   filter: var(--drop-shadow-lg);
 }
 
-.img-fluid {
+.img-responsive {
   max-inline-size: 100%;
   block-size: auto;
   height: auto;

@@ -122,10 +122,6 @@
   section {
     scroll-margin-top: 7rem;
   }
-  .description {
-    font-weight: 500;
-    text-align: center;
-  }
 }
 
 .well {
@@ -137,9 +133,6 @@
   padding: 0.7rem;
   margin-bottom: 1rem;
   gap: 1rem;
-  .icon-badge {
-    margin-right: 1rem;
-  }
   &.align_center {
     align-items: center;
   }
@@ -149,18 +142,9 @@
   &.block {
     display: block;
   }
-  .round {
-    width: 35%;
-  }
 }
 
 .card_container {
   display: flex;
   gap: 1.2rem;
-}
-.form-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1.25rem;
-  align-items: baseline;
 }
