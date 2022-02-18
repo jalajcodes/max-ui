@@ -3,6 +3,9 @@
 @import url("./avatar/avatar.css");
 @import url("./badge/badge.css");
 @import url("./card/card.css");
+@import url("./toast/toast.css");
+@import url("./rating/rating.css");
+@import url("./list/list.css");
 :root {
   --primary: #129bfd;
   --primary-light: #54b1f3;

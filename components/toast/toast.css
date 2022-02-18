@@ -1,0 +1,40 @@
+.toast {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid var(--black);
+  color: var(--black);
+  border-radius: 0.4rem;
+  font-weight: 300;
+  position: relative;
+  width: 100%;
+}
+.toast p {
+  margin: 1rem 0.7rem 1rem 0;
+}
+.toast__icon {
+  display: inline-block;
+  margin: 0 0.8rem;
+}
+.toast--primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+.toast--success {
+  background-color: var(--green);
+  color: var(--white);
+}
+.toast--warning {
+  background-color: var(--red);
+  color: var(--white);
+}
+.toast--error {
+  background-color: var(--red);
+  color: var(--white);
+}
+.toast--info {
+  background-color: var(--yellow);
+  color: var(--white);
+}
+
+/*# sourceMappingURL=toast.css.map */
