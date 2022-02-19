@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Docus | Max UI</title>
+    <title>Docs | Max UI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -52,6 +52,9 @@
         <a href="#grid" class="link">Grid</a>
         <a href="#modal" class="link">Modal</a>
         <a href="#navigation" class="link">Navigation</a>
+        <a href="#list" class="link">List</a>
+        <a href="#toast" class="link">Toast</a>
+        <a href="#rating" class="link">Rating</a>
       </aside>
       <div class="wrapper">
         <div class="sub_container">
@@ -677,6 +680,156 @@
             </pre>
           </section>
 
+          <section id="toast">
+            <h1>Toast</h1>
+            <p>
+              Toasts are used to display messages to the user. They are used to notify the user of
+              important events.
+            </p>
+            <h4>Toast with Icon</h4>
+            <p>Toasts can be used with icons.</p>
+            <div class="well">
+              <div class="toast toast--primary">
+                <i class="toast__icon fa-solid fa-circle-info"></i>
+                <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="toast toast--success">
+                <i class="toast__icon fa-solid fa-circle-info"></i>
+                <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="toast toast--error">
+                <i class="toast__icon fa-solid fa-circle-info"></i>
+                <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="toast toast--info">
+                <i class="toast__icon fa-solid fa-circle-info"></i>
+                <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <pre>
+              <code class="html">
+<div class="toast toast--primary">
+  <i class="toast__icon fa-solid fa-circle-info"></i>
+  <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+<div class="toast toast--success">
+  <i class="toast__icon fa-solid fa-circle-info"></i>
+  <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+<div class="toast toast--error">
+  <i class="toast__icon fa-solid fa-circle-info"></i>
+  <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+<div class="toast toast--info">
+  <i class="toast__icon fa-solid fa-circle-info"></i>
+  <p class="toast__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+                </code>
+                </pre>
+          </section>
+
+          <section id="rating">
+            <h1>Rating</h1>
+            <p>Ratings are used to display the user's rating of a product or service.</p>
+            <p>To change rating use the <code>--rating</code> css variable like shown below.</p>
+            <div class="well">
+              <div class="rating" style="--rating: 2.4"></div>
+            </div>
+            <pre>
+              <code class="html">
+<div
+  class="rating"
+  style="--rating: 2.4"
+></div>
+              </code>
+            </pre>
+          </section>
+
+          <section id="list">
+            <h1>List</h1>
+            <p>Lists are used to display a list of items.</p>
+            <h4>Unordered List</h4>
+
+            <div class="well">
+              <ul class="list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            </div>
+            <pre>
+              <code class="html">
+<ul class="list">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+              </code>
+              </pre>
+
+            <h4>List Style Circle</h4>
+            <div class="well">
+              <ul class="list list--circle">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            </div>
+            <pre>
+              <code class="html">
+<ul class="list list--circle">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+                </code>
+                </pre>
+
+            <h4>List Style Square</h4>
+            <div class="well">
+              <ul class="list list--square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ul>
+            </div>
+            <pre>
+              <code class="html">
+<ul class="list list--square">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+                </code>
+                </pre>
+
+            <h4>List Style Roman</h4>
+            <div class="well">
+              <ol class="list list--roman">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+              </ol>
+            </div>
+            <pre>
+              <code class="html">
+<ol class="list list--roman">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ol>
+                </code>
+                </pre>
+          </section>
+          
           <section id="grid">
             <h1>Grid</h1>
             <p>
