@@ -21,7 +21,7 @@
 .main .sidebar .link {
   position: relative;
   font-size: 15px;
-  color: var(--gray-2);
+  color: var(--gray-4);
   margin-bottom: 1rem;
   width: fit-content;
 }
@@ -136,6 +136,19 @@
 }
 .well.block {
   display: block;
+}
+
+section#text div.well {
+  flex-direction: column;
+}
+section#text div.well h1,
+section#text div.well h2,
+section#text div.well h3,
+section#text div.well h4,
+section#text div.well h5,
+section#text div.well h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .card_container {

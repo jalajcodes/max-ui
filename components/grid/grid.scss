@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  gap: 1.2rem;
+}
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+.col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.col-autofit {
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
