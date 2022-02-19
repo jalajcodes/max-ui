@@ -117,10 +117,6 @@
 .main section {
   scroll-margin-top: 7rem;
 }
-.main .description {
-  font-weight: 500;
-  text-align: center;
-}
 
 .well {
   border: 1px solid #ededed;
@@ -132,9 +128,6 @@
   margin-bottom: 1rem;
   gap: 1rem;
 }
-.well .icon-badge {
-  margin-right: 1rem;
-}
 .well.align_center {
   align-items: center;
 }
@@ -143,9 +136,6 @@
 }
 .well.block {
   display: block;
-}
-.well .round {
-  width: 35%;
 }
 
 section#text div.well {
@@ -164,13 +154,6 @@ section#text div.well h6 {
 .card_container {
   display: flex;
   gap: 1.2rem;
-}
-
-.form-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1.25rem;
-  align-items: baseline;
 }
 
 /*# sourceMappingURL=docs.css.map */
