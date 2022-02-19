@@ -3,6 +3,9 @@
 @import url("./avatar/avatar.css");
 @import url("./badge/badge.css");
 @import url("./card/card.css");
+@import url("./grid/grid.css");
+@import url("./modal/modal.css");
+@import url("./navigation/navigation.css");
 @import url("./image/image.css");
 @import url("./input/input.css");
 @import url("./text/text.css");
