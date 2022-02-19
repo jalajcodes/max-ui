@@ -8,6 +8,6 @@
 .col-3 {
   grid-template-columns: 1fr 1fr 1fr;
 }
-.col-3-autofit {
+.col-autofit {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
