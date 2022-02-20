@@ -65,6 +65,7 @@
 @media screen and (max-width: 768px) {
   .nav__links .nav__link {
     margin-right: 0;
+    margin-bottom: 1rem;
   }
 }
 .nav__links .nav__link:hover {
