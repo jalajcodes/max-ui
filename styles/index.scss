@@ -84,6 +84,10 @@ body {
       height: 300px;
       align-self: center;
       margin-bottom: 1.5rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .cta {
@@ -91,6 +95,10 @@ body {
       width: 10rem;
       font-size: 1rem;
       margin: 0 0.7rem;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

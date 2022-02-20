@@ -87,10 +87,20 @@ body {
   align-self: center;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .container__info .frame-image {
+    display: none;
+  }
+}
 .container .cta button {
   width: 10rem;
   font-size: 1rem;
   margin: 0 0.7rem;
+}
+@media screen and (max-width: 768px) {
+  .container .cta button {
+    margin-bottom: 1rem;
+  }
 }
 
 .footer {
