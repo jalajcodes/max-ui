@@ -33,6 +33,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .header__links {
+    display: none;
+  }
+}
 .header__links a {
   color: var(--black);
   margin-right: 1.2rem;

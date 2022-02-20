@@ -31,6 +31,11 @@ body {
   &__links {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     a {
       color: var(--black);
       margin-right: 1.2rem;

@@ -32,6 +32,9 @@
       </div>
     </header>
     <main class="main">
+      <div class="sidebar-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <aside class="sidebar">
         <h4>Introduction</h4>
         <a href="#quickstart" class="link">Quick Start</a>
@@ -140,16 +143,16 @@
             <pre>
     <code class="html">
 <div class="avatar avatar-xs">
-  <img src="https://picsum.photos/200/200?random=4" alt="" />
+  <img src="https://picsum.photos/200/200?random=4" alt="picsum" />
 </div>
 <div class="avatar avatar-sm">
-  <img src="https://picsum.photos/200/200?random=3" alt="" />
+  <img src="https://picsum.photos/200/200?random=3" alt="picsum" />
 </div>
 <div class="avatar avatar-md">
-  <img src="https://picsum.photos/200/200?random=2" alt="" />
+  <img src="https://picsum.photos/200/200?random=2" alt="picsum" />
 </div>
 <div class="avatar avatar-lg">
-  <img src="https://picsum.photos/200/200?random=1" alt="" />
+  <img src="https://picsum.photos/200/200?random=1" alt="picsum" />
 </div>
       </code>
       </pre>
@@ -201,13 +204,13 @@
               <button class="btn btn--warning">Warning</button>
             </div>
             <pre>
-<code class="html">
+              <code class="html">
 <button class="btn btn--primary">Primary</button>
 <button class="btn btn--info">Info</button>
 <button class="btn btn--success">Success</button>
 <button class="btn btn--warning">Warning</button>
-</code>
-</pre>
+              </code>
+            </pre>
 
             <div class="well">
               <button class="btn btn--primary btn--round">Click Me</button>
@@ -216,13 +219,13 @@
               <button class="btn btn--primary btn--link">Click Me</button>
             </div>
             <pre>
-<code class="html">
+              <code class="html">
 <button class="btn btn--primary btn--round">Click Me</button>
 <button class="btn btn--primary btn--outline">Click Me</button>
 <button class="btn btn--primary btn--round btn--outline">Click Me</button>
 <button class="btn btn--primary btn--link">Click Me</button>
-</code>
-</pre>
+              </code>
+            </pre>
           </section>
 
           <section id="card">
@@ -562,8 +565,8 @@
 
             <h4>Card with Overlay</h4>
             <p>
-              To use the card with overlay just add a div class
-              <code>.card__overlay</code> class to the parent.
+              To use the card with overlay just add a div with class
+              <code>.card__overlay</code> class to the parent and text content in it.
             </p>
             <div class="card_container">
               <div class="card vertical">
