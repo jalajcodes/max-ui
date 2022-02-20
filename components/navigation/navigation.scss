@@ -44,6 +44,7 @@
     @media (max-width: 768px) {
       position: absolute;
       background: var(--white);
+      z-index: 30;
       right: 0;
       top: 100%;
       visibility: hidden;
