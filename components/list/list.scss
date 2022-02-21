@@ -11,3 +11,11 @@
     list-style-type: upper-roman;
   }
 }
+
+ul.stacked-list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+ul.stacked-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}

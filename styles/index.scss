@@ -14,7 +14,7 @@ body {
   position: sticky;
   background: var(--page-bg);
   top: 0;
-  z-index: 10;
+  z-index: 100;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -30,6 +30,11 @@ body {
   &__links {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     a {
       color: var(--black);
       margin-right: 1.2rem;
@@ -133,6 +138,10 @@ body {
       height: 300px;
       align-self: center;
       margin-bottom: 1.5rem;
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
   .cta {
@@ -140,6 +149,10 @@ body {
       width: 10rem;
       font-size: 1rem;
       margin: 0 0.7rem;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+// HIGHLIGHT JS
 document.querySelectorAll("code").forEach((element) => {
   element.innerHTML = element.innerHTML
     .replace(/&/g, "&amp;")
@@ -8,8 +9,13 @@ document.querySelectorAll("code").forEach((element) => {
 });
 hljs.highlightAll();
 
-document.querySelectorAll("a").forEach((el) => {
+// SECTIONS
+document.querySelectorAll(".sidebar a").forEach((el) => {
   el.addEventListener("click", (e) => {
+    const sidebar = document.querySelector(".sidebar.open");
+    if (sidebar) {
+      sidebar.classList.remove("open");
+    }
     const href = e.target.getAttribute("href");
     const sectionToShow = document.querySelector(href);
 
@@ -54,3 +60,14 @@ window.onload = () => {
     quickStart.classList.add("active");
   }
 };
+
+// SIDEBAR
+const sidebarToggle = document.querySelector(".sidebar-toggle");
+const sidebar = document.querySelector(".sidebar");
+
+if (sidebarToggle && sidebar) {
+  sidebarToggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    sidebar.classList.toggle("open");
+  });
+}
