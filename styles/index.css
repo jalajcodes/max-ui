@@ -11,9 +11,8 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid #e3e3e3c7;
   position: sticky;
-  background: #ffffff;
+  background: var(--page-bg);
   top: 0;
   z-index: 100;
 }
@@ -44,6 +43,51 @@ body {
 }
 .header__links a:hover {
   color: var(--primary);
+}
+.header .theme-switcher {
+  display: flex;
+  align-items: center;
+}
+.header .theme-switcher__label {
+  display: inline-block;
+  height: 2.1rem;
+  position: relative;
+  width: 3.8rem;
+}
+.header .theme-switcher__label input {
+  display: none;
+}
+.header .theme-switcher__thumb {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+.header .theme-switcher__thumb:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 1.6rem;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 1.7rem;
+}
+.header .theme-switcher__thumb.round {
+  border-radius: 1rem;
+}
+.header .theme-switcher__thumb.round:before {
+  border-radius: 50%;
+}
+.header .theme-switcher input:checked + .theme-switcher__thumb {
+  background-color: var(--primary);
+}
+.header .theme-switcher input:checked + .theme-switcher__thumb:before {
+  transform: translateX(1.6rem);
 }
 
 .container {
