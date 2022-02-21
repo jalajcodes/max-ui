@@ -15,6 +15,27 @@
   height: calc(100vh - 82px - 2rem);
   overflow-y: scroll;
 }
+@media screen and (max-width: 768px) {
+  .main .sidebar {
+    position: fixed;
+    background: white;
+    padding: 1rem;
+    border: 1px solid;
+    top: 6rem;
+    left: 1rem;
+    height: 40rem;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .main .sidebar h4 {
+    margin-top: 1rem;
+  }
+}
+.main .sidebar.open {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
 .main .sidebar h6 {
   margin-bottom: 1.2rem;
 }
@@ -59,6 +80,31 @@
   transform: scaleX(1);
   margin-right: 1.4rem;
   background: var(--primary);
+}
+.main .sidebar-toggle {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  z-index: 100;
+  top: 1rem;
+  color: var(--white);
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .sidebar-toggle i {
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .main .sidebar-toggle {
+    display: block;
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+  }
 }
 .main .wrapper {
   display: flex;
