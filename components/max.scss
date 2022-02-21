@@ -29,6 +29,7 @@
   --yellow-light: #feebc8;
   --blue: #007bc3;
   --blue-light: #bde3f8;
+  --page-bg: #ffffff;
   --gray-1: #cec8c8;
   --gray-2: #aca5a5;
   --gray-3: #968d8d;
@@ -37,10 +38,19 @@
   --drop-shadow-lg: drop-shadow(0 10px 8px rgb(0 0 0/0.04)) drop-shadow(0 4px 3px rgb(0 0 0/0.1));
 }
 
+[data-theme="dark"] {
+  --gray-4: #cfd4de;
+  --page-bg: #566480;
+}
+
 * {
   box-sizing: border-box;
   font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+body {
+  background-color: var(--page-bg);
 }
 
 h1,
