@@ -5,6 +5,7 @@
   width: fit-content;
   box-sizing: border-box;
   margin: 0;
+  color: var(--black);
 }
 
 .badge {

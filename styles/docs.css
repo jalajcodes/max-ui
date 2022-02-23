@@ -164,8 +164,8 @@
 }
 
 .well {
-  border: 1px solid #ededed;
-  background: #ffffff;
+  border: 1px solid var(--gray-1);
+  background: var(--white);
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
