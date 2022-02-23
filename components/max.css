@@ -40,7 +40,13 @@
 
 [data-theme=dark] {
   --gray-4: #cfd4de;
-  --page-bg: #566480;
+  --page-bg: #31363f;
+  --black: antiquewhite;
+  --white: #000000;
+}
+
+[data-theme=dark].well:not(.well.nav) {
+  --black: #302d41;
 }
 
 * {
