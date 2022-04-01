@@ -27,6 +27,12 @@ document.querySelectorAll(".sidebar a").forEach((el) => {
         .to(".active", {
           opacity: 0,
           duration: 0.5,
+          onanimationstart: () => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          },
         })
         .set(".active", {
           display: "none",

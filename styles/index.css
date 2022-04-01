@@ -49,7 +49,8 @@ body {
   align-items: center;
 }
 .header .theme-switcher__label {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   height: 2.1rem;
   position: relative;
   width: 3.8rem;
@@ -57,37 +58,42 @@ body {
 .header .theme-switcher__label input {
   display: none;
 }
-.header .theme-switcher__thumb {
-  background-color: #ccc;
-  bottom: 0;
+.header .theme-switcher .sun {
   cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px -6px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 5px 14px/2px 6px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat -8px 5px/6px 2px,
+    linear-gradient(to bottom, currentColor 4px, transparent 0) no-repeat 14px 5px/6px 2px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 0 2px;
+  border: 6px solid transparent;
 }
-.header .theme-switcher__thumb:before {
-  background-color: #fff;
-  bottom: 4px;
+.header .theme-switcher .sun:after,
+.header .theme-switcher .sun:before {
   content: "";
-  height: 1.6rem;
-  left: 4px;
+  display: block;
+  box-sizing: border-box;
   position: absolute;
-  transition: 0.4s;
-  width: 1.7rem;
+  width: 24px;
+  height: 2px;
+  border-right: 4px solid;
+  border-left: 4px solid;
+  left: -6px;
+  top: 5px;
 }
-.header .theme-switcher__thumb.round {
-  border-radius: 1rem;
+.header .theme-switcher .sun:before {
+  transform: rotate(-45deg);
 }
-.header .theme-switcher__thumb.round:before {
-  border-radius: 50%;
+.header .theme-switcher .sun:after {
+  transform: rotate(45deg);
 }
-.header .theme-switcher input:checked + .theme-switcher__thumb {
-  background-color: var(--primary);
-}
-.header .theme-switcher input:checked + .theme-switcher__thumb:before {
-  transform: translateX(1.6rem);
+.header .theme-switcher input:checked + .sun {
+  color: var(--primary);
 }
 
 .container {
@@ -181,5 +187,3 @@ body {
 .footer.home-footer {
   height: auto;
 }
-
-/*# sourceMappingURL=index.css.map */

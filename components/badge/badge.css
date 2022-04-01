@@ -8,6 +8,51 @@
   color: var(--black);
 }
 
+.avatar-badge {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--black);
+}
+.avatar-badge .badge {
+  position: absolute;
+  right: -0.2rem;
+  bottom: 0.2rem;
+  z-index: 1;
+  width: 0.8rem;
+  height: 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
+.icon-badge {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--black);
+}
+.icon-badge i {
+  font-size: 2.5rem;
+}
+.icon-badge .badge {
+  position: absolute;
+  right: -0.5rem;
+  top: 0rem;
+  z-index: 1;
+  width: 0.8rem;
+  height: 1.5rem;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+
 .badge {
   padding: 0.4rem 0.65rem;
   color: var(--white);
@@ -31,5 +76,3 @@
 .badge-round {
   border-radius: 50rem;
 }
-
-/*# sourceMappingURL=badge.css.map */
